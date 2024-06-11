@@ -1,0 +1,16 @@
+section {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 5rem;
+  align-items: center;
+}
+
+button img {
+  max-width: 40px;
+}
+
+.right-arrow img {
+  transform: rotate(180deg);
+}

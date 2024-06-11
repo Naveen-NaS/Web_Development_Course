@@ -16,7 +16,7 @@ var bandName = "";
 // We have to write "bodyParser" before "bandNameGenerator", as bandNameGenrator using req.body
 // And if we use req.body before bodyParser then it'll show undefined as bodyParser will create it.
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(morgan("tiny"));
+app.use(morgan("common"));
 
 function bandNameGenerator(req, res, next) {
   console.log(req.body);
